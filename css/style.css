@@ -5,6 +5,7 @@
 
 * {
     font-family: Arial, Helvetica, sans-serif;
+    border-radius: 8px;
 }
 
 
@@ -22,9 +23,8 @@ body {
     color: black;
 }
 
-body form { display: block; }
-
 form {
+    display: block;
     text-align: center;
     margin-top: 10%;
     margin-left: auto;
@@ -36,12 +36,6 @@ form {
     border-radius: 8px;
 }
 
-
-form * {
-    border-radius: 8px;
-
-}
-    
 fieldset {
     text-align: center;
     border-color: blue;
