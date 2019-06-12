@@ -1,4 +1,85 @@
 
-.body-class {
+/* Hacemos la importación SÓLO para saber que se puede importar la tipografía */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+    background-image: url("../img/myFondoPerspectiva.jpg");
+}
+
+
+.logo a {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 1000;
+    top: 0;
+    margin: 15px;
+    color: black;
+}
+
+body form { display: block; }
+
+form {
+    text-align: center;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    padding: 15px;
+    font-size: 30px;
+    background-color: grey;
+    border-radius: 8px;
+}
+
+
+form * {
+    border-radius: 8px;
+
+}
     
+fieldset {
+    text-align: center;
+    border-color: blue;
+    margin: 30px;
+}
+
+.login-fields-class input {
+    margin: 10px;
+    height: 50px;
+    width: 90%;
+}
+
+form.form-login button {
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 40px;
+    width: 60%;
+    height: 50px;
+    font-size: 25px;
+    background-color:red;
+    border: 2px solid;
+    cursor: grab;
+    
+}
+form.form-login button:hover {
+    color: black;
+    background-color: blue;
+}
+
+
+.login-remainder-class {
+    float: left;
+    font: initial;
+}
+
+.login-helper-class a {
+    float: right;
+    font: initial;
+    color: initial;
 }

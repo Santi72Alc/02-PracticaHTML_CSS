@@ -6,21 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Práctica HTML5 y CSS - Santiago San Román</title>
-    <link rel="stylesheet" href="css/style.css">
+    <base href="./">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body class="body-class">
     
     <header class="header">
         <div class="logo">
-            <img src="img/logoMyVideoNet.png" alt="logo">
+            <a href="./index.html">myVideoNet</a>
         </div>
+        <nav class="">
+            <!-- 
+                En la página inicial está vacio por que es
+                la ventana de acceso
+             -->
+        </nav>
     </header>
 
-    </section>
-
     <section>
-
+        <form class="form-login" action="">
+            <fieldset>
+                <legend>Iniciar Sesión</legend>
+                <div class="login-fields-class">
+                    <input type="email" placeholder="e-mail registrado" name="email" id="email">
+                    <input type="password" placeholder="Password registrado" name="password" id="password">
+                </div>
+                <div>
+                    <button>Iniciar Sesión</button>
+                </div>
+                <div class="login-remainder-class">
+                    <input type="checkbox" name="remainder" id="">
+                    <label for="remainder">Recuérdame</label>
+                </div>
+                <div class="login-helper-class">
+                    <a href="http://">¿Necesitas ayuda?</a>
+                </div>
+            </fieldset>
+        </form>
     </section>
 </body>
 </html>
