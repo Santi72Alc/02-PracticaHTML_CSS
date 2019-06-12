@@ -10,10 +10,10 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body class="body-index-class">
+<body class="body-remainder-class">
 
     <header class="header">
-        <div class="logo">
+        <div>
             <a href="./index.html"><span id="companyName"></span></a>
         </div>
         <nav class="">
@@ -25,23 +25,24 @@
     </header>
 
     <section>
-        <form class="form-login" action="">
+        <form class="form-remainder" action="">
             <fieldset>
-                <legend>Iniciar Sesión</legend>
-                <div class="login-fields-class">
+                <h1>No recuerdo mi dirección de correo/contraseña</h1>
+                <p>¿Cómo quieres restablecer la contraseña?</p>
+                <div class="radio-remainder-class">
+                    <input type="radio" name="typeOfRemainder" value="email"><span>Correo</span><br>
+                    <input type="radio" name="typeOfRemainder" value="call">Llamada<br>
+                    <input type="radio" name="typeOfRemainder" value="sms">Mensaje de texto (SMS)<br>
+                </div>
+                <div class="email-remainder-class">
+                    <p>Se te enviarán las instrucciones según la opción que hayas seleccionado</p>
                     <input type="email" placeholder="e-mail registrado" name="email" id="email">
-                    <input type="password" placeholder="Password registrado" name="password" id="password">
                 </div>
                 <div>
-                    <button>Iniciar Sesión</button>
-                </div>
-                <div class="login-remainder-class">
-                    <input type="checkbox" name="remainder" id="">Recuérdame
-                </div>
-                <div class="login-helper-class">
-                    <a href="./remainderPage.html">¿Necesitas ayuda?</a>
+                    <button>Recuperar contraseña</button>
                 </div>
             </fieldset>
+                
         </form>
     </section>
 </body>
