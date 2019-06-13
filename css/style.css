@@ -12,8 +12,8 @@
 Nombre de la empresa para incustrar en la esquina superior izquierda
 */
 #companyName::before {
-    content: "myVideoNet";
     font-family: Roboto, Arial, Helvetica, sans-serif;
+    content: "myVideoNet";
     font-size: 40px;
     font-weight: 1000;
     top: 0;
@@ -30,6 +30,31 @@ Propiedades generales de las páginas
 body {
     background-image: url("../img/myFondoPerspectiva.jpg");
 }
+
+footer {
+    border-radius: 0;
+    margin-top: 90px;
+    width: 100%;
+    height: 150px;
+    background: rgba(0,0,0,0.80)
+}
+
+.footer-phone {
+    /* border: solid 3px red; */
+    display: block;
+    padding-top: 20px;
+    margin-left: 90px;
+    
+    color: blanchedalmond;
+}
+
+.footer-conditions p {
+    border: 3px red solid;
+    display: inline-block;
+    color: blanchedalmond;
+    margin-left: 90px;
+}
+
 
 a {
     text-decoration: none;
@@ -111,9 +136,6 @@ index Page
 remainderPage Page
 */
 
-.form-remainder {
-
-}
 
 .form-remainder h1 {
     font-size: 30px;
@@ -128,6 +150,10 @@ remainderPage Page
     text-align: left;
     font-style: italic;
     font-size: 20px;
+}
+
+.radio-remainder-class input {
+    margin-right: 15px;
 }
 
 .email-remainder-class input {
@@ -152,3 +178,5 @@ remainderPage Page
 .form-remainder button:hover {
     color: black;
     background-color: blue;
+
+
