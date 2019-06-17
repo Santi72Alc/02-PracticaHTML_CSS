@@ -8,6 +8,7 @@
     border-radius: 8px;
 }
 
+
 /*
 Nombre de la empresa para incustrar en la esquina superior izquierda
 */
@@ -33,32 +34,36 @@ body {
 
 footer {
     border-radius: 0;
+    margin: 0;
     margin-top: 90px;
+    
     width: 100%;
     height: 150px;
     background: rgba(0,0,0,0.80)
 }
 
-.footer-phone {
-    /* border: solid 3px red; */
-    display: block;
-    padding-top: 20px;
-    margin-left: 90px;
-    
-    color: blanchedalmond;
-}
-
-.footer-conditions p {
-    border: 3px red solid;
-    display: inline-block;
-    color: blanchedalmond;
-    margin-left: 90px;
+button {
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 40px;
+    width: 60%;
+    height: auto;
+    font-size: 20px;
+    background-color:red;
+    border: 2px solid;
+    cursor: grab;
 }
 
 
 a {
     text-decoration: none;
+    padding: 5px;
+    color: black;
+    font-style: italic;
+    font-size: 14px;;
 }
+
 
 form {
     display: block;
@@ -84,6 +89,37 @@ input {
 }
 
 
+button:hover {
+    background-color: blue;
+    color: white;
+}
+
+
+.footer-class div p {
+    border: 3px red solid;
+}
+
+.footer-class a {
+    color: blue;
+}
+
+.footer-phone {
+    /* border: solid 3px red; */
+    display: block;
+    padding-top: 20px;
+    margin-left: 90px;
+    
+    color: blanchedalmond;
+}
+
+.footer-conditions {
+    display: inline-block;
+    color: blanchedalmond;
+    margin-left: 90px;
+}
+
+
+
 /*
 index Page
 */
@@ -94,25 +130,6 @@ index Page
     width: 90%;
 }
 
-.form-login button {
-    text-decoration: none;
-    text-align: center;
-    margin-bottom: 15px;
-    margin-top: 40px;
-    width: 60%;
-    height: 50px;
-    font-size: 25px;
-    background-color:red;
-    border: 2px solid;
-    cursor: grab;
-    
-}
-
-.form-login button:hover {
-    color: black;
-    background-color: blue;
-}
-
 
 .login-remainder-class {
     float: left;
@@ -121,8 +138,6 @@ index Page
 
 .login-helper-class a {
     float: right;
-    font: initial;
-    color: initial;
 }
 
 
@@ -135,7 +150,6 @@ index Page
 /*
 remainderPage Page
 */
-
 
 .form-remainder h1 {
     font-size: 30px;
@@ -161,22 +175,12 @@ remainderPage Page
     width: 90%;
 }
 
-.form-remainder button {
-    text-decoration: none;
-    text-align: center;
-    margin-bottom: 15px;
-    margin-top: 40px;
-    width: 50%;
-    height: 50px;
-    font-size: 15px;
-    background-color:red;
-    border: 2px solid;
-    cursor: grab;
-    
-}
 
-.form-remainder button:hover {
-    color: black;
-    background-color: blue;
+.form-remainder-buttonBack-class:hover a {
+    padding-right: 10px;
+    padding-left: 10px;
+    zoom: 1.2;
+    border: 2px red solid;
+}
 
 
