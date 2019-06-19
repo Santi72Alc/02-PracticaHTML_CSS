@@ -1,9 +1,12 @@
 
-/* Hacemos la importación SÓLO para saber que se puede importar la tipografía */
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
+:root {
+    --bg-footer-color: rgba(0,0,0,0.80);
+    --fg-footer-color: lightcyan;
+}
 
 * {
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 8px;
 }
@@ -12,61 +15,127 @@
 /*
 Nombre de la empresa para incustrar en la esquina superior izquierda
 */
-#companyName::before {
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-    content: "myVideoNet";
-    font-size: 40px;
+#companyName {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
     font-weight: 1000;
-    top: 0;
-    margin: 15px;
+    margin-left: 15px;
     color: blue;
-    text-shadow: 4px 4px 2px rgba(0,0,0,0.77);
+    background: var(--bg-footer-color);
+    border: 1px white solid;
+    padding: 10px;
+    text-shadow: 3px 3px 1px burlywood;
     font-style: italic;
 }
+
 
 
 /* 
 Propiedades generales de las páginas
 */
 body {
-    background-image: url("../img/myFondoPerspectiva.jpg");
+    background-image: url("../img/myfondo.jpg");
+    display: flex;
+    height: 100vh;
+    flex-flow: column wrap;
+    justify-content: space-between;
+
 }
 
-footer {
-    border-radius: 0;
-    margin: 0;
-    margin-top: 90px;
-    
+header {
+    height: 90px;
     width: 100%;
-    height: 150px;
-    background: rgba(0,0,0,0.80)
 }
-
-button {
-    text-decoration: none;
-    text-align: center;
-    margin-bottom: 15px;
-    margin-top: 40px;
-    width: 60%;
-    height: auto;
-    font-size: 20px;
-    background-color:red;
-    border: 2px solid;
-    cursor: grab;
-}
-
 
 a {
     text-decoration: none;
-    padding: 5px;
-    color: black;
-    font-style: italic;
-    font-size: 14px;;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.logo {
+    align-self: center;
 }
 
 
+button {
+    text-align: center;
+    font-size: 1.2rem;
+    background-color:red;
+    border: 2px solid;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: blue;
+    color: white;
+}
+
+
+footer {
+    flex-direction: column;
+    border-radius: 0;
+    background-color: var(--bg-footer-color);
+    color: var(--fg-footer-color);
+
+}
+
+
+.footer-header {
+    display: flex;
+    height: 35px;
+    justify-content: space-between;
+}
+
+.footer-phone {
+    align-self: center;
+    margin-left: 4%;
+    /* font-size: 1rem; */
+
+}
+
+.footer-languaje  {
+    align-self: center;
+    margin-right: 4%;
+}
+
+.footer-languaje select {
+    border-radius: 0;
+}
+}
+
+
+.footer-conditions {
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+}
+
+.footer-conditions ul { padding: 0; }
+
+.footer-conditions li {
+    list-style: none;
+    font-size: .8rem;
+    margin-left: 4%;
+    margin-bottom: 20px;
+}
+
+.footer-conditions li:first-child {
+    margin-top: 10px;
+}
+
+/* Quitamos el color a los enlaces... */
+.footer-conditions a {
+    color: var(--fg-footer-color);
+}
+
+/*
+
+
 form {
-    display: block;
     text-align: center;
     margin-top: 10%;
     margin-left: auto;
@@ -89,98 +158,28 @@ input {
 }
 
 
-button:hover {
-    background-color: blue;
-    color: white;
-}
 
 
-.footer-class div p {
-    border: 3px red solid;
-}
 
-.footer-class a {
+.footer * {
+    border: 2px red solid;
+} 
+
+.footer a {
     color: blue;
 }
 
 .footer-phone {
-    /* border: solid 3px red; */
-    display: block;
     padding-top: 20px;
-    margin-left: 90px;
-    
-    color: blanchedalmond;
+    margin-left: 50px;
+    margin-bottom: 30px;
 }
 
 .footer-conditions {
     display: inline-block;
     color: blanchedalmond;
-    margin-left: 90px;
 }
 
 
 
-/*
-index Page
 */
-.login-fields-class input {
-    text-align: center;
-    margin: 10px;
-    height: 50px;
-    width: 90%;
-}
-
-
-.login-remainder-class {
-    float: left;
-    font: initial;
-}
-
-.login-helper-class a {
-    float: right;
-}
-
-
-.login-helper-class:hover {
-    zoom: 1.4;
-}
-
-
-
-/*
-remainderPage Page
-*/
-
-.form-remainder h1 {
-    font-size: 30px;
-}
-
-.form-remainder p {
-    font-size: 18px;
-}
-
-.radio-remainder-class {
-    font-display: left;
-    text-align: left;
-    font-style: italic;
-    font-size: 20px;
-}
-
-.radio-remainder-class input {
-    margin-right: 15px;
-}
-
-.email-remainder-class input {
-    height: 50px;
-    width: 90%;
-}
-
-
-.form-remainder-buttonBack-class:hover a {
-    padding-right: 10px;
-    padding-left: 10px;
-    zoom: 1.2;
-    border: 2px red solid;
-}
-
-
