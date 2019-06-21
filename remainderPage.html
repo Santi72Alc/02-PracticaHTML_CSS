@@ -6,59 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Práctica HTML5 y CSS - Santiago San Román</title>
-    <base href="./">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="css/remainder.css">
+    <link rel="stylesheet" type="text/css" href="css/remainder.css">
 </head>
 
-<body class="body-remainder-class">
-
-    <header class="header">
-        <div>
-            <a href="./index.html"><span id="companyName"></span></a>
-        </div>
-        <nav class="">
-            <!-- 
-                En la página inicial está vacio por que es
-                la ventana de acceso
-             -->
+<body>
+    <header>
+        <nav class="nav-class">
+            <div class="logo">
+                <a href="./index.html" id="companyName">myVideoNet</a> 
+            </div>
+            <!-- <div class="index-login-button">
+                <button onclick="location.href='./login.html'">Iniciar sesión</button>
+            </div> -->
         </nav>
     </header>
 
-    <section>
-        <form class="remainder-form" action="">
-            <h1>No recuerdo mi dirección de correo/contraseña</h1>
+    <main class="remainder-main">
+            <form class="remainder-form" action="">
+                <h1>No recuerdo mi dirección de correo/contraseña</h1>
+                <hr>
+                <fieldset class="remainder-fields">
+                    <p>¿Cómo quieres restablecer la contraseña?</p>
+                    <div class="remainder-radio">
+                        <input type="radio" name="typeOfRemainder" value="email">Correo<br>
+                        <input type="radio" name="typeOfRemainder" value="call">Llamada<br>
+                        <input type="radio" name="typeOfRemainder" value="sms">Mensaje de texto (SMS)<br>
+                    </div>
+                    <p><i>Se te enviarán las instrucciones según la opción que hayas seleccionado</i></p>
+                    <div class="remainder-email">    
+                        <input type="email" placeholder="e-mail registrado" name="email" id="email">
+                    </div>
+                    <div class="remainder-button-ok">
+                        <button>Recuperar contraseña</button>
+                    </div>
+                </fieldset>
+                <div class="remainder-button-back">
+                    <a href="javascript:history.go(-1)">Volver atrás</a>
+                </div>
+            </form>
+    </main>
+
+    <!-- <main class="login-main">
+        <h1>Iniciar Sesión</h1>
+
+        <form class="login-form" action="">
             <fieldset>
-                <p>¿Cómo quieres restablecer la contraseña?</p>
-                <div class="remainder-radio">
-                    <input type="radio" name="typeOfRemainder" value="email">Correo<br>
-                    <input type="radio" name="typeOfRemainder" value="call">Llamada<br>
-                    <input type="radio" name="typeOfRemainder" value="sms">Mensaje de texto (SMS)<br>
-                </div>
-                <div class="remainder-email">
-                    <p>Se te enviarán las instrucciones según la opción que hayas seleccionado</p>
+                <div class="login-fields">
+                    <label for="email">email</label>
                     <input type="email" placeholder="e-mail registrado" name="email" id="email">
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Password registrado" name="password" id="password">
                 </div>
-                <div>
-                    <button>Recuperar contraseña</button>
+                <div class="login-button">
+                    <button>Iniciar Sesión</button>
                 </div>
-            <div class="remainder-form-buttonBack">
-                <a href="javascript:history.go(-1)">Volver atrás</a>
-            </div>
             </fieldset>
-                
         </form>
-    </section>
-    <footer class="footer">
-        <div class="footer-phone">
-            <p>¿Preguntas? Llama al <a href="tel:+1626261122">999866616</a></p>
+        <div class="login-main-footer">
+            <div class="login-checkbox-remainder">
+                <input type="checkbox" name="remainder" id="remainder">
+                <label for="remainder">Recuérdame</label>
+            </div>
+            <div class="login-help">
+                <a href="http://">¿Necesitas ayuda?</a>
+            </div>
         </div>
+    </main>    -->
+
+    <footer class="footer">
+        <div class="footer-header">
+            <div class="footer-phone">
+                <p>¿Preguntas? Llama al <a href="tel:+1626261122">999866616</a></p>
+            </div>
+        </div>      
         <div class="footer-conditions">
-            <p>Términos de la tarjeta regalo</p>
-            <p>Términos de uso</p>
-            <p>declaración de privacidad</p>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Términos de la tarjeta regalo</a></li>
+                    <li><a href="#">Términos de uso</a></li>
+                    <li><a href="#">Declaración de privacidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-languaje">
+                <span>Idioma :</span>
+                <select name="languaje">
+                    <option value="ESP">Español</option>
+                    <option value="ENG">English</option>
+                </select>
+            </div>
         </div>
     </footer>
 </body>
 
 </html>
+
+
