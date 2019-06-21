@@ -44,7 +44,7 @@ body {
 
 header {
     height: 90px;
-    width: 100%;
+    width: 100vw;
 }
 
 a {
@@ -54,6 +54,15 @@ a {
 a:hover {
     cursor: pointer;
 }
+
+/* Navegador principal... con LOGO y botón de login o menú */
+.nav-class {
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    width: 100%;
+}
+
 
 .logo {
     align-self: center;
@@ -75,7 +84,10 @@ button:hover {
 }
 
 
+
+
 footer {
+    display: flex;
     flex-direction: column;
     border-radius: 0;
     background-color: var(--bg-footer-color);
@@ -86,51 +98,58 @@ footer {
 
 .footer-header {
     display: flex;
-    height: 35px;
     justify-content: space-between;
 }
 
 .footer-phone {
     align-self: center;
-    margin-left: 4%;
+    margin-left: 35px;
+    margin-top: 15px;
     /* font-size: 1rem; */
-
-}
-
-.footer-languaje  {
-    align-self: center;
-    margin-right: 4%;
-}
-
-.footer-languaje select {
-    border-radius: 0;
-}
 }
 
 
 .footer-conditions {
     display: flex;
-    height: auto;
     justify-content: space-between;
 }
-
-.footer-conditions ul { padding: 0; }
 
 .footer-conditions li {
     list-style: none;
     font-size: .8rem;
-    margin-left: 4%;
-    margin-bottom: 20px;
-}
-
-.footer-conditions li:first-child {
-    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 /* Quitamos el color a los enlaces... */
 .footer-conditions a {
     color: var(--fg-footer-color);
 }
+
+
+
+/* .footer-links { 
+    margin-left: 2%;
+}
+*/
+
+
+.footer-links li:first-child {
+    margin-top: 15px;
+}
+
+
+.footer-languaje  {
+    align-self: center;
+    margin-right: 20px;;
+}
+
+.footer-languaje select {
+    border-radius: 0;
+}
+
+
+
+
 
 /*
 

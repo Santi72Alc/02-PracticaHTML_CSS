@@ -1,11 +1,5 @@
 
-/* Navegador principal... con LOGO y botón de login */
-.index-nav {
-    display: flex;
-    justify-content: space-between;
-    height: 90px;
-    width: 100%;
-}
+
 
 .index-login-button {
     margin-right: 3%;
