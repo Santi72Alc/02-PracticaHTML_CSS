@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Práctica HTML5 y CSS - Santiago San Román</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav-class">
+            <div class="logo">
+                <a href="./index.html" id="companyName">myVideoNet</a> 
+            </div>
+            <!-- <div class="index-login-button">
+                <button onclick="location.href='./login.html'">Iniciar sesión</button>
+            </div> -->
+        </nav>
+    </header>
+
+    <main class="login-main">
+        <h1>Iniciar Sesión</h1>
+
+        <form class="login-form" action="">
+            <fieldset>
+                <div class="login-fields">
+                    <label for="email">email</label>
+                    <input type="email" placeholder="e-mail registrado" name="email" id="email">
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Password registrado" name="password" id="password">
+                </div>
+                <div class="login-button">
+                    <button>Iniciar Sesión</button>
+                </div>
+            </fieldset>
+        </form>
+        <div class="login-main-footer">
+            <div class="login-checkbox-remainder">
+                <input type="checkbox" name="remainder" id="remainder">
+                <label for="remainder">Recuérdame</label>
+            </div>
+            <div class="login-help">
+                <a href="http://">¿Necesitas ayuda?</a>
+            </div>
+        </div>
+    </main>   
+
+    <footer class="footer">
+        <div class="footer-header">
+            <div class="footer-phone">
+                <p>¿Preguntas? Llama al <a href="tel:+1626261122">999866616</a></p>
+            </div>
+        </div>      
+        <div class="footer-conditions">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Términos de la tarjeta regalo</a></li>
+                    <li><a href="#">Términos de uso</a></li>
+                    <li><a href="#">Declaración de privacidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-languaje">
+                <span>Idioma :</span>
+                <select name="languaje">
+                    <option value="ESP">Español</option>
+                    <option value="ENG">English</option>
+                </select>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+
