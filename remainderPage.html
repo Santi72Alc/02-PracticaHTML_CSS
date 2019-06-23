@@ -13,7 +13,7 @@
 <body>
     <header>
         <nav class="nav-class">
-            <div class="logo">
+            <div class="logo tracking-in-expand">
                 <a href="./index.html" id="companyName">myVideoNet</a> 
             </div>
             <!-- <div class="index-login-button">
@@ -29,16 +29,28 @@
                 <fieldset class="remainder-fields">
                     <p>¿Cómo quieres restablecer la contraseña?</p>
                     <div class="remainder-radio">
-                        <input type="radio" name="typeOfRemainder" value="email">Correo<br>
-                        <input type="radio" name="typeOfRemainder" value="call">Llamada<br>
-                        <input type="radio" name="typeOfRemainder" value="sms">Mensaje de texto (SMS)<br>
+                        <p class="radio-group-p">
+                            <input type="radio" name="typeOfRemainder" value="email" id="radioEmail" checked>
+                            <label for="redioEmail">email</label>
+                        </p>
+                        <p class="radio-group-p">
+                            <input type="radio" name="typeOfRemainder" value="call" id="radioCall">
+                            <label for="radioCall">Llamada</label>
+                        </p>
+                        <p class="radio-group-p">
+                        <input type="radio" name="typeOfRemainder" value="sms" id="radioSms">
+                        <label for="radioSms">Mensaje de texto (SMS)</label>
+                        </p>
                     </div>
                     <p><i>Se te enviarán las instrucciones según la opción que hayas seleccionado</i></p>
-                    <div class="remainder-email">    
-                        <input type="email" placeholder="e-mail registrado" name="email" id="email">
+                    <div class="remainder-email">
+                        <p class="entry-group-p">
+                            <label for="email">email</label>
+                            <input type="email" placeholder="e-mail registrado" name="email" id="email">
+                        </p>
                     </div>
                     <div class="remainder-button-ok">
-                        <button>Recuperar contraseña</button>
+                        <input type="button" value="Recuperar contraseña">
                     </div>
                 </fieldset>
                 <div class="remainder-button-back">
@@ -46,33 +58,6 @@
                 </div>
             </form>
     </main>
-
-    <!-- <main class="login-main">
-        <h1>Iniciar Sesión</h1>
-
-        <form class="login-form" action="">
-            <fieldset>
-                <div class="login-fields">
-                    <label for="email">email</label>
-                    <input type="email" placeholder="e-mail registrado" name="email" id="email">
-                    <label for="password">Password</label>
-                    <input type="password" placeholder="Password registrado" name="password" id="password">
-                </div>
-                <div class="login-button">
-                    <button>Iniciar Sesión</button>
-                </div>
-            </fieldset>
-        </form>
-        <div class="login-main-footer">
-            <div class="login-checkbox-remainder">
-                <input type="checkbox" name="remainder" id="remainder">
-                <label for="remainder">Recuérdame</label>
-            </div>
-            <div class="login-help">
-                <a href="http://">¿Necesitas ayuda?</a>
-            </div>
-        </div>
-    </main>    -->
 
     <footer class="footer">
         <div class="footer-header">

@@ -1,10 +1,16 @@
 /*
-login Page
+remainder Page
 */
-
-.remainder-main {
+/* body {
     display: flex;
     flex-direction: column;
+    height: 100vh;
+} */
+
+
+.remainder-main {
+    /* display: flex;
+    flex-direction: column; */
     align-items: center;
     background-color: grey;
     /* height: 300px; */
@@ -25,7 +31,7 @@ login Page
     margin: 15px;
 }
 
-.remainder-fields p {
+.remainder-fields > p {
     margin: 10px;
 }
 
@@ -40,12 +46,13 @@ login Page
 .remainder-email {
     display: flex;
     justify-content: center;
+    width: auto;
     margin: 20px;
 }
 
 .remainder-email input {
     padding: 5px;
-    size: 100px;
+    width: 300px;
 }
 
 .remainder-button-ok {

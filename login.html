@@ -13,11 +13,11 @@
 <body>
     <header>
         <nav class="nav-class">
-            <div class="logo">
+            <div class="logo tracking-in-expand">
                 <a href="./index.html" id="companyName">myVideoNet</a> 
             </div>
             <!-- <div class="index-login-button">
-                <button onclick="location.href='./login.html'">Iniciar sesión</button>
+                <input type="button" onclick="location.href='./login.html'">Iniciar sesión</button>
             </div> -->
         </nav>
     </header>
@@ -25,16 +25,21 @@
     <main class="login-main">
         <h1>Iniciar Sesión</h1>
 
-        <form class="login-form" action="">
+        <form class="login-form" action="" id="fom-login">
             <fieldset>
                 <div class="login-fields">
-                    <label for="email">email</label>
-                    <input type="email" placeholder="e-mail registrado" name="email" id="email">
-                    <label for="password">Password</label>
-                    <input type="password" placeholder="Password registrado" name="password" id="password">
+                    <p class="entry-group-p">
+                        <label for="email">email</label>
+                        <input type="email" placeholder="e-mail registrado" name="email" id="email">
+                    </p>
+                    <p class="entry-group-p">
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="Password registrado" name="password" id="password">
+                    </p>        
                 </div>
                 <div class="login-button">
-                    <button>Iniciar Sesión</button>
+                    <input type="button" form="form-login" value="Iniciar"
+                        onclick="location.href='./mainPage.html'">
                 </div>
             </fieldset>
         </form>
@@ -44,7 +49,7 @@
                 <label for="remainder">Recuérdame</label>
             </div>
             <div class="login-help">
-                <a href="remainderPage.html">¿Necesitas ayuda?</a>
+                <a href="./remainderPage.html">¿Necesitas ayuda?</a>
             </div>
         </div>
     </main>   

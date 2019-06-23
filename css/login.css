@@ -1,6 +1,11 @@
 /*
 login Page
 */
+/* body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+} */
 
 .login-main {
     display: flex;
@@ -20,20 +25,10 @@ login Page
 
 .login-form fieldset {
     border: 0;
+    align-content: center;
+    width: 230px;
 }
 
-.login-fields label {
-    font-size: .8rem;
-}
-
-.login-fields {
-    display: flex;
-    flex-direction: column;
-}
-
-.login-fields input {
-    margin-bottom: 10px;
-}
 
 .login-button {
     margin-top: 15px;
@@ -50,10 +45,8 @@ login Page
 }
 
 .login-help {
-    /* align-self: flex-end; */
     font-size: .8rem;
 }
-
 
 .login-help:hover {
     border: 1px red solid;

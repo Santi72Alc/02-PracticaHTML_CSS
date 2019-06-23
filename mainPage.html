@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Práctica HTML5 y CSS - Santiago San Román</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/mainPage.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav-class">
+            <div class="logo tracking-in-expand">
+                <a href="./index.html" id="companyName">myVideoNet</a> 
+            </div>
+            <div class="index-login-button">
+                <input type="button" value="Cerrar Sesión"
+                    onclick="location.href='./index.html'">
+            </div>
+        </nav>
+    </header>
+
+    <main class="index-title">
+        <h1>Seleccionado para ti</h1>
+        <h2>Nuestra selección para tu momento!!</h2>
+    </main>
+
+    <section class="carousel">
+        <div class="carousel-title">
+            <p>Te recomendamos...</p>
+        </div>
+        <div class="cover-pages">
+            <div class="cover-item">
+                <a class="video-link">
+                    <video src="img/costa1.mp4">
+                </a>
+                <div class="description-item">
+                        <p>Título vídeo 1</p>  
+                        <p>Descripción vídeo 1</p>
+                        <p>Segunda línea de descripción</p>
+                </div>
+                <div class="footer-video">
+                    <p>Título Vídeo 1</p>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-header">
+            <div class="footer-phone">
+                <p>¿Preguntas? Llama al <a href="tel:+1626261122">999866616</a></p>
+            </div>
+        </div>      
+        <div class="footer-conditions">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Términos de la tarjeta regalo</a></li>
+                    <li><a href="#">Términos de uso</a></li>
+                    <li><a href="#">Declaración de privacidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-languaje">
+                <span>Idioma :</span>
+                <select name="languaje">
+                    <option value="ESP">Español</option>
+                    <option value="ENG">English</option>
+                </select>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
