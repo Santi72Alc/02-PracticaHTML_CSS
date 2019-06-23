@@ -1,0 +1,111 @@
+
+/*
+mainPage page
+*/
+.carousel {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 5px;
+    background-color: var(--bg-footer-color);
+    justify-content: space-between center;
+    justify-items: center;
+    border-radius: 0;
+
+}
+
+
+.carousel-items {
+    justify-content: center;
+    /* align-self: center; */
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+}
+
+.cover-item {
+    align-content: center;
+}
+
+/* .cover-item > div {
+    height: 420px;
+} */
+
+video {
+    width: 100%;
+}
+
+video.cover-item {
+    position: relative;
+    top:0;
+    left:0;
+    padding:10px;
+    margin:0;
+}
+
+.description-item {
+    /* align-items: center; */
+    background-color: antiquewhite;
+    color: black;
+    width: 90%;
+    height: 160px;
+    padding: 8px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.footer-item {
+    align-items: center;
+    height: 30px;
+    padding: 10px;
+}
+
+
+.desvanecer:hover {
+    opacity: 0.4;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    transition: opacity 500ms;
+  }
+
+
+
+
+/*****************************************************/
+/* Título principal CENTRADO EN PANTALLA a gusto */
+.index-title {
+    grid-area: main-title;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    height: 200px;
+}
+
+.index-title h1 {
+    font-style: italic;
+    color: red;
+    font-size: 2rem;
+}
+
+
+/****************************************************/
+/* Código modificado del footer principal */
+.footer-links {
+    margin-top: 10px;
+}
+
+
+.footer-links > ul { 
+    display: flex;
+    justify-content: space-between;
+    /* align-content: center; */
+    width: 60vw;
+    height: 24px;
+}
+
+.footer-links li:first-child {
+    margin: 0;
+} 

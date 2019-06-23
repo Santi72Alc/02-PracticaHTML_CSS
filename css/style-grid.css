@@ -58,24 +58,10 @@ a {
     color: var(--fg-color);
 }
 
+
 a:hover {
     cursor: pointer;
     text-decoration: underline;
-}
-
-.nav-menu {
-    display: flex;
-    height: auto;
-
-}
-
-.nav-menu {
-    width: 800px;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
 }
 
 .nav-menu ul {
@@ -101,16 +87,6 @@ a:hover {
 .nav-menu a:hover {
     background-color: var(--bg-footer-color);
 }
-
-
-
-/* Botón del menú principal */
-.index-login-button {
-    margin-right: 3%;
-    align-self: center;
-}
-
-
 
 
 footer {
@@ -158,19 +134,19 @@ input {
 .footer-conditions {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px;
 }
 
 .footer-conditions li {
     list-style: none;
     font-size: .8rem;
-    margin-bottom: 9px;
+    margin-bottom: 15px;
 }
 
 /* Quitamos el color a los enlaces... */
 footer a {
     color: var(--fg-footer-color);
 }
+
 
 .footer-links li:first-child {
     margin-top: 15px;
@@ -179,7 +155,7 @@ footer a {
 
 .footer-languaje  {
     align-self: center;
-    margin-right: 20px;
+    margin-right: 20px;;
 }
 
 .footer-languaje select {
