@@ -132,6 +132,7 @@ footer {
 }
 
 
+
 .logo {
     align-self: center;
 }
@@ -142,6 +143,10 @@ input {
 }
 
 
+
+/*
+Propiedades del pie de página
+*/
 .footer-header {
     display: flex;
     justify-content: space-between;

@@ -3,6 +3,53 @@
 mainPage page
 */
 
+:root {
+
+    /* Datos Video 3 */
+    --video3-title: "Amor Incidicional";
+    --video3-description: "Ese amor de nuestra mascota que \
+                        jamás podremos dejar de recordar.";
+    --video3-calification: "Un sentimiento sincero";
+    --video3-footer: "A mi Nano... donde estés!!"
+}
+
+.modalbox div {
+    margin: 10px;
+}
+
+/* Montamos los datos del video 3 */
+h2#video3-title::before {
+    content: var(--video3-title);
+}
+p#video3-description::before {
+    content: var(--video3-description);
+}
+p#video3-calification::before {
+    content: var(--video3-calification);
+}
+
+p#video3-footer::before {
+    content: var(--video3-footer);
+}
+
+
+.modal-mask [id$="-title"] {
+    margin-bottom: 15px;
+}
+.modal-mask [id$="-description"] {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
 .main {
     display: flex;
     flex-direction: column;
@@ -142,3 +189,107 @@ Pié de video
 .footer-links li:first-child {
     margin: 0;
 } 
+
+
+
+
+/********************************************************/
+/*
+Nos permite crear la ventana MODAL 
+*/
+.modal-mask {
+    position: fixed;
+    font-family: Arial, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modal-mask:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+/* Creamos la ventana */
+.modalbox {
+    width: 400px;
+    position: relative;
+    top: 10%;
+    padding: 5px 20px 13px 20px;
+    background: #fff;
+    border-radius:3px;
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    transition: all 500ms ease-in;
+     
+}
+
+/* Hacemos los movimientos */
+.movedown {
+    margin: 0 auto;
+}
+
+
+.rotate {
+    margin: 10% auto;
+    -webkit-transform: scale(-5,-5);
+    transform: scale(-5,-5);
+}
+
+
+.resize {
+    margin: 10% auto;
+    width:0;
+    height:0;
+ 
+}
+
+
+.modalmask:target .movedown{       
+    margin:10% auto;
+}
+
+
+.modalmask:target .rotate{     
+    transform: rotate(360deg) scale(1,1);
+        -webkit-transform: rotate(360deg) scale(1,1);
+}
+ 
+.modalmask:target .resize{
+    width:400px;
+    height:200px;
+}
+
+
+
+.close {
+	background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: 1px;
+    text-align: center;
+    top: 1px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius:3px;
+ 
+}
+ 
+.close:hover {
+    background: #FAAC58;
+    color:#222;
+}
+
+/************************************************/
+
+
