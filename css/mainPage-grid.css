@@ -5,38 +5,60 @@ mainPage page
 
 :root {
 
+    /* Datos Video 1 */
+    --video1-title: "Olas sin fin";
+    --video1-description: "El sonido e imagen de esas ola infinitas \
+                    haciendo estremecer cada uno de los poros de la piel.";
+    --video1-calification: "Movimiento continuo!!";
+    --video1-footer: "Olas en la playa";
+
+    /* Datos Video 2 */
+    --video2-title: "Naturaleza viva";
+    --video2-description: "El poder incontrolable de esa naturaleza \
+                    indomable que siempre querremos dominar.";
+    --video2-calification: "El poder está ahí...";
+    --video2-footer: "Naturaleza poderosa!!";
+
     /* Datos Video 3 */
     --video3-title: "Amor Incidicional";
     --video3-description: "Ese amor de nuestra mascota que \
                         jamás podremos dejar de recordar.";
     --video3-calification: "Un sentimiento sincero";
-    --video3-footer: "A mi Nano... donde estés!!"
+    --video3-footer: "A mi Nano... donde estés!!";
 }
 
-.modalbox div {
-    margin: 10px;
-}
+
+/* Montamos los datos del video 1 */
+[id="video1-title"]::before { content: var(--video1-title); }
+[id="video1-description"]::before { content: var(--video1-description); }
+[id="video1-calification"]::before { content: var(--video1-calification); }
+[id="video1-footer"]::before { content: var(--video1-footer); }
+
+/* Montamos los datos del video 2 */
+[id="video2-title"]::before { content: var(--video2-title); }
+[id="video2-description"]::before { content: var(--video2-description); }
+[id="video2-calification"]::before { content: var(--video2-calification); }
+[id="video2-footer"]::before { content: var(--video2-footer); }
 
 /* Montamos los datos del video 3 */
-h2#video3-title::before {
-    content: var(--video3-title);
-}
-p#video3-description::before {
-    content: var(--video3-description);
-}
-p#video3-calification::before {
-    content: var(--video3-calification);
-}
-
-p#video3-footer::before {
-    content: var(--video3-footer);
-}
+[id="video3-title"]::before { content: var(--video3-title); }
+[id="video3-description"]::before { content: var(--video3-description); }
+[id="video3-calification"]::before { content: var(--video3-calification); }
+[id="video3-footer"]::before { content: var(--video3-footer); }
 
 
-.modal-mask [id$="-title"] {
-    margin-bottom: 15px;
+
+
+
+/* Ponemos los parámetros en la ventana modal */
+[id$="-title"] {
+    margin-bottom: 10px;
+    text-decoration: underline;
+    text-align: center;
 }
-.modal-mask [id$="-description"] {
+
+p[id$="-description"], 
+p[id$="-calification"] {
     margin-bottom: 10px;
 }
 
@@ -48,8 +70,8 @@ p#video3-footer::before {
 
 
 
-
-
+/**********************************************************/
+/* página principal */
 .main {
     display: flex;
     flex-direction: column;
@@ -58,6 +80,8 @@ p#video3-footer::before {
 }
 
 
+
+/* carousel */
 .carousel {
     display: flex;
     flex-direction: row;
@@ -67,8 +91,6 @@ p#video3-footer::before {
     height: 300px;
     /* margin-bottom: 5px; */
     background-color: var(--bg-footer-color);
-    /* justify-content: space-between center;
-    justify-items: center; */
     border-radius: 0;
 
 }
@@ -88,10 +110,18 @@ p#video3-footer::before {
     align-content: center;
     width: auto;
     padding: 10px;
-    /* height: 300px; */
-    /* margin: 50px; */
 }
 
+
+
+.cover-item {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
 
 video {
     width: 100%;
@@ -99,24 +129,13 @@ video {
 }
 
 
-/* tgb: necesitas poner algún ancestro con posicionamiento
-        que te permita usar el posicionamiento absoluto para
-        tu .description-item */
-.cover-item {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    /* height: 200px; */
-    z-index: 1;
-}
-
 .description-item {
+    position: absolute;
+    align-self: center;
     background-color: antiquewhite;
     color: black;
     width: 85%;
     padding: 8px;
-    position: absolute;
-    align-self: center;
     z-index: -1;
 }
 
@@ -131,6 +150,7 @@ video {
     font-size: .8rem;
     padding: 5px;
 }
+
 /*
 Pié de video
 */
@@ -225,7 +245,7 @@ Nos permite crear la ventana MODAL
     top: 10%;
     padding: 5px 20px 13px 20px;
     background: #fff;
-    border-radius:3px;
+    border-radius:8px;
     -webkit-transition: all 500ms ease-in;
     -moz-transition: all 500ms ease-in;
     transition: all 500ms ease-in;
@@ -275,9 +295,9 @@ Nos permite crear la ventana MODAL
     color: #FFFFFF;
     line-height: 25px;
     position: absolute;
-    right: 1px;
+    right: 5px;
     text-align: center;
-    top: 1px;
+    top: 5px;
     width: 24px;
     text-decoration: none;
     font-weight: bold;

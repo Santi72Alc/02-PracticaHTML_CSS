@@ -36,37 +36,46 @@
         <section class="index-title">
             <h1>Los mejores videos seleccionados para ti!!</h1>
         </section>
+
         <section class="carousel">
             <section class="carousel-items">
                 <!-- Cada uno de los videos mostrados -->
                 <div class="item">
-                        <div class="cover-item">
-                            <div class="description-item">
-                                    <h2>Acantilado mágico</h2>  
-                                    <p>El golpe imponente de las olas sobre el acantilado 
-                                        deja sin palabras a cualquiera que lo observe.</p>
-                                    <p>Somos insignificantes ante la fuerza de la naturaleza.</p>
-                            </div>
-                            <video class="video-item desvanecer" src="img/waves02.mp4"></video>
+                    <div class="cover-item">
+                        <div class="description-item">
+                            <h2 id="video1-title"></h2>  
+                            <p id="video1-description"></p>
+                            <p id="video1-calification"></p>
                         </div>
-                        <div class="footer-item">
-                            <p>El sentir de la fuerza</p>
-                        </div>
-                </div> 
+                        <a href="#modal-video1">
+                            <video class="desvanecer"
+                                src="img/waves01.mp4">
+                            </video>
+                        </a>
+                    </div>
+                    <div class="footer-item">
+                        <p id="video1-footer"></p>
+                    </div>
+                </div>
+
                 <div class="item">
                     <div class="cover-item">
                         <div class="description-item">
-                                <h2>Otoño rojo</h2>  
-                                <p>No hay igual al ver caer esas hojas marchitas en 
-                                    un otoño rojo.</p>
-                                <p>Ese paso del tiempo ...</p>
+                            <h2 id="video2-title"></h2>  
+                            <p id="video2-description"></p>
+                            <p id="video2-calification"></p>
                         </div>
-                        <video class="video-item desvanecer" src="img/redAutumn.mp4"></video>
+                        <a href="#modal-video2">
+                            <video class="desvanecer" 
+                                src="img/waves02.mp4">
+                            </video>
+                        </a>
                     </div>
                     <div class="footer-item">
-                        <p>Otoño rojo</p>
+                        <p id="video2-footer"></p>
                     </div>
-                </div> 
+                </div>
+
                 <div class="item">
                     <div class="cover-item">
                         <div class="description-item">
@@ -75,7 +84,7 @@
                             <p id="video3-calification"></p>
                         </div>
                         <a href="#modal-video3">
-                            <video class="video-item desvanecer" 
+                            <video class="desvanecer" 
                                 src="img/pet01.mp4"></video>
                         </a>
                     </div>
@@ -86,17 +95,43 @@
             </section>
 
             <!-- Divisiones modales por cada video -->
-            <div id="modal-video3" class="modal-mask">
-                    <div class="modalbox movedown">
-                        <a href="#close" title="Cerrar" class="close">X</a>
-                        <h2 id="video3-title"></h2>
-                        <p id="video3-description"></p>
-                        <p id="video3-calification"></p>
-                        <div>
-                            <video src="img/pet01.mp4" frameborder="0"
-                                width="auto" height="300px" controls autoplay loop>
-                        </div>
+            <div id="modal-video1" class="modal-mask">
+                <div class="modalbox movedown">
+                    <a href="#close" title="Cerrar" class="close">X</a>
+                    <h2 id="video1-title"></h2>
+                    <p id="video1-description"></p>
+                    <p id="video1-calification"></p>
+                    <div>
+                        <video src="img/waves01.mp4" 
+                            width="auto" height="300px" controls autoplay loop>
                     </div>
+                </div>
+            </div>
+
+            <div id="modal-video2" class="modal-mask">
+                <div class="modalbox movedown">
+                    <a href="#close" title="Cerrar" class="close">X</a>
+                    <h2 id="video2-title"></h2>
+                    <p id="video2-description"></p>
+                    <p id="video2-calification"></p>
+                    <div>
+                        <video src="img/waves02.mp4" frameborder="0"
+                            width="auto" height="300px" controls autoplay loop>
+                    </div>
+                </div>
+            </div>
+
+            <div id="modal-video3" class="modal-mask">
+                <div class="modalbox movedown">
+                    <a href="#close" title="Cerrar" class="close">X</a>
+                    <h2 id="video3-title"></h2>
+                    <p id="video3-description"></p>
+                    <p id="video3-calification"></p>
+                    <div>
+                        <video src="img/pet01.mp4" frameborder="0"
+                            width="auto" height="300px" controls autoplay loop>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
