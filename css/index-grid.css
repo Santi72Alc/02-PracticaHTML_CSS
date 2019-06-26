@@ -1,0 +1,39 @@
+
+
+
+/* 
+.nav-menu {
+    width: 800px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.index-login-button {
+    margin-right: 3%;
+    align-self: center;
+}
+*/
+
+/* Título principal CENTRADO EN PANTALLA a gusto */
+/* 
+
+.index-title {
+    height: 300px;
+}
+
+.index-title h1 {
+    text-align: center;
+    font-size: 4rem;
+    color: red;
+}
+
+.index-title h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-style: italic;
+}
+
+*/

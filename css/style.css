@@ -2,6 +2,7 @@
 
 :root {
     --fg-color: black;
+    --fg-menu-color: white;
     --bg-footer-color: rgba(0,0,0,0.80);
     --fg-footer-color: lightcyan;
     --fg-label-color: black;
@@ -57,11 +58,58 @@ a {
     color: var(--fg-color);
 }
 
-
 a:hover {
     cursor: pointer;
     text-decoration: underline;
 }
+
+.nav-menu {
+    display: flex;
+    height: auto;
+
+}
+
+.nav-menu {
+    width: 800px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-menu ul {
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin: 0px;
+}
+
+
+.nav-menu li {
+    list-style-type: none;
+    display: inline;
+    /* padding-right: 10px; */
+}
+
+.nav-menu a {
+    color: var(--fg-menu-color);
+    padding: 10px;
+}
+
+.nav-menu a:hover {
+    background-color: var(--bg-footer-color);
+}
+
+
+
+/* Botón del menú principal */
+.index-login-button {
+    margin-right: 3%;
+    align-self: center;
+}
+
 
 
 
@@ -84,6 +132,7 @@ footer {
 }
 
 
+
 .logo {
     align-self: center;
 }
@@ -94,6 +143,10 @@ input {
 }
 
 
+
+/*
+Propiedades del pie de página
+*/
 .footer-header {
     display: flex;
     justify-content: space-between;
@@ -110,19 +163,19 @@ input {
 .footer-conditions {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 15px;
 }
 
 .footer-conditions li {
     list-style: none;
     font-size: .8rem;
-    margin-bottom: 15px;
+    margin-bottom: 9px;
 }
 
 /* Quitamos el color a los enlaces... */
 footer a {
     color: var(--fg-footer-color);
 }
-
 
 .footer-links li:first-child {
     margin-top: 15px;
@@ -131,7 +184,7 @@ footer a {
 
 .footer-languaje  {
     align-self: center;
-    margin-right: 20px;;
+    margin-right: 20px;
 }
 
 .footer-languaje select {
