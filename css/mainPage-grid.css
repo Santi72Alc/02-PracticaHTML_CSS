@@ -75,8 +75,6 @@ p[id$="-calification"] {
 .main {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between;
-    align-items: stretch; */
 }
 
 
@@ -124,6 +122,11 @@ p[id$="-calification"] {
 }
 
 video {
+    width: 100%;
+    height: auto;
+}
+
+img {
     width: 100%;
     height: auto;
 }
