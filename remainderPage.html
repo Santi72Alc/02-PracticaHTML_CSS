@@ -23,10 +23,11 @@
     </header>
 
     <main class="remainder-main">
-            <form class="remainder-form" action="">
+            <form class="remainder-form" name="remainder-form"
+                    action="">
                 <h1>No recuerdo mi dirección de correo/contraseña</h1>
                 <hr>
-                <fieldset class="remainder-fields">
+                <fieldset class="remainder-fields" form="remainder-form">
                     <p>¿Cómo quieres restablecer la contraseña?</p>
                     <div class="remainder-radio">
                         <p class="radio-group-p">
@@ -48,10 +49,11 @@
                             <label for="email">email</label>
                             <input type="email" placeholder="e-mail registrado" name="email" id="email">
                         </p>
+                        <div class="remainder-button-ok">
+                            <input type="button" value="Recuperar contraseña">
+                        </div>
                     </div>
-                    <div class="remainder-button-ok">
-                        <input type="button" value="Recuperar contraseña">
-                    </div>
+                    
                 </fieldset>
                 <div class="remainder-button-back">
                     <a href="javascript:history.go(-1)">Volver atrás</a>

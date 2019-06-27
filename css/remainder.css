@@ -1,16 +1,10 @@
 /*
 remainder Page
 */
-/* body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-} */
-
 
 .remainder-main {
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
     align-items: center;
     background-color: grey;
     /* height: 300px; */
@@ -19,40 +13,44 @@ remainder Page
     margin: auto;
 }
 
+.remainder-form {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+}
+
 .remainder-form h1 {
     text-align: center;
-    margin: 20px;
+    padding: 5px 10px;
     font-size: 1.5rem;
 }
 
+.remainder-form p {
+    width: inherit;
+    padding-bottom: 10px;
+}
 
 .remainder-fields {
+    display: flex;
     border: 0;
-    margin: 15px;
+    padding: 15px;
 }
 
-.remainder-fields > p {
-    margin: 10px;
-}
-
-.remainder-radio {
-    margin-bottom: 30px;
-}
 
 .remainder-radio input {
     margin: 8px;
 }
 
 .remainder-email {
-    display: flex;
+    display: block;
     justify-content: center;
     width: auto;
-    margin: 20px;
+    /* padding: 10px; */
 }
 
 .remainder-email input {
     padding: 5px;
-    width: 300px;
+    /* width: 300px; */
 }
 
 .remainder-button-ok {
@@ -60,5 +58,83 @@ remainder Page
 }
 
 .remainder-button-back {
-    margin: 20px;
+    padding: 10px;
 }
+
+
+
+/**********************************************/
+/* media queries */
+
+@media screen and (max-width: 640px) { 
+
+    .remainder-main {
+        width: 270px;
+        font-size: .7rem;
+    }
+
+    .remainder-form {
+        width: inherit;
+    }
+
+    .remainder-form h1 {
+        font-size: .8rem;   
+    }
+
+    .remainder-fields {
+        padding-bottom: 0;
+    }
+
+    .remainder-radio p {
+        font-size: .7rem;
+    }
+
+    .remainder-form p {
+        width: inherit;
+        margin: 0;
+    }
+
+    .remainder-button-ok input[type="button"] {
+        font-size: .8rem;
+        margin-top: 5px;
+    }
+    
+    .login-main-footer {
+        margin-top: 5px;
+    }
+
+    .footer-links li {
+        font-size: .6rem;
+        margin-bottom: 4px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 640px) and (orientation: landscape) {
+
+    .remainder-main {
+        position: absolute;
+        top: 10px;
+        left: 200px;
+    }
+
+    .remainder-radio {
+        display: flex;
+    }
+ 
+    /* footer */
+    /* Lo hacemos en línea para poder ver mejor */
+    .footer-links > ul { 
+        display: flex;
+        justify-content: space-between;
+        width: 60vw;
+        margin-top: 10px;
+    }
+
+    .footer-links li:first-child {
+        margin: 0;
+    }
+}
+
