@@ -1,8 +1,8 @@
 /*
-remainder Page
+searchWin Page
 */
 
-.remainder-main {
+.main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,50 +13,52 @@ remainder Page
     margin: auto;
 }
 
-.remainder-form {
+.mainForm {
     display: flex;
     flex-direction: column;
     width: inherit;
 }
 
-.remainder-form h1 {
+.mainForm h1 {
     text-align: center;
     padding: 5px 10px;
     font-size: 1.5rem;
 }
 
-.remainder-form p {
+.mainForm p {
     width: inherit;
     padding-bottom: 10px;
 }
 
-.remainder-fields {
+.fields {
     display: flex;
     border: 0;
     padding: 15px;
 }
 
-.remainder-radio label {
+ 
+.radio-group label {
     padding-left: 5px;
-}
 
-.remainder-email {
+} 
+
+.text-group {
     display: block;
     justify-content: center;
     width: auto;
     /* padding: 10px; */
 }
 
-.remainder-email input {
+.text-group input {
     padding: 5px;
     /* width: 300px; */
 }
 
-.remainder-button-ok {
+.button-ok {
     text-align: center;
 }
 
-.remainder-button-back {
+.button-back {
     padding: 10px;
 }
 
@@ -67,33 +69,33 @@ remainder Page
 
 @media screen and (max-width: 640px) { 
 
-    .remainder-main {
+    .main {
         width: 270px;
         font-size: .7rem;
     }
 
-    .remainder-form {
+    .mainForm {
         width: inherit;
     }
 
-    .remainder-form h1 {
+    .mainForm h1 {
         font-size: .8rem;   
     }
 
-    .remainder-fields {
+    .fields {
         padding-bottom: 0;
     }
 
-    .remainder-radio p {
-        font-size: .7rem;
-    }
-
-    .remainder-form p {
+    .mainForm p {
         width: inherit;
         margin: 0;
     }
 
-    .remainder-button-ok input[type="button"] {
+    .radio-group p {
+        font-size: .7rem;
+    }
+
+    .button-ok input[type="button"] {
         font-size: .8rem;
         margin-top: 5px;
     }
@@ -113,13 +115,13 @@ remainder Page
 
 @media screen and (max-width: 640px) and (orientation: landscape) {
 
-    .remainder-main {
+    .main {
         position: absolute;
         top: 10px;
         left: 200px;
     }
 
-    .remainder-radio {
+    .radio-group {
         display: flex;
     }
  
