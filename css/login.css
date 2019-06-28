@@ -52,3 +52,54 @@ login Page
     border: 1px red solid;
     padding: 3px 8px;
 }
+
+
+
+/**********************************************/
+/* media queries */
+
+@media screen and (max-width: 640px) { 
+
+    .login-button input[type="button"] {
+        font-size: .8rem;
+        margin-top: 5px;
+    }
+    
+    .login-main-footer {
+        margin-top: 5px;
+    }
+
+    .footer-links li {
+        font-size: .6rem;
+        margin-bottom: 4px;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 640px) and (orientation: landscape) {
+
+    .login-main {
+        position: absolute;
+        top: 10px;
+        left: 200px;
+    }
+
+    .login-main h1 {
+        margin: 5px;
+    }
+    /* footer */
+    /* Lo hacemos en línea para poder ver mejor */
+    .footer-links > ul { 
+        display: flex;
+        justify-content: space-between;
+        width: 60vw;
+        margin-top: 10px;
+    }
+
+    .footer-links li:first-child {
+        margin: 0;
+    }
+}
+

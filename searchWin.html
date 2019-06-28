@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Práctica HTML5 y CSS - Santiago San Román</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/remainder.css">
+    <link rel="stylesheet" type="text/css" href="css/searchWin.css">
 </head>
 
 <body>
@@ -22,40 +22,44 @@
         </nav>
     </header>
 
-    <main class="remainder-main">
-            <form class="remainder-form" name="remainder-form"
+    <main class="main">
+            <form class="mainForm" name="mainForm"
                     action="">
-                <h1>No recuerdo mi dirección de correo/contraseña</h1>
+                <h1>Búsqueda de películas</h1>
                 <hr>
-                <fieldset class="remainder-fields" form="remainder-form">
-                    <p>¿Cómo quieres restablecer la contraseña?</p>
-                    <div class="remainder-radio">
+                <fieldset class="fields" form="mainForm">
+                    <p>Selecciona <i><strong>donde</strong></i> y <i><strong>qué</strong></i> deseas
+                        buscar</p>
+                    <div class="radio-group">
                         <p class="radio-group-p">
-                            <input type="radio" name="typeOfRemainder" value="email" id="radioEmail" checked>
-                            <label for="radioEmail">email</label>
+                            <input type="radio" name="typeOfSearch" 
+                                value="title" id="radioTitle" checked>
+                            <label for="radioTitle">Título</label>
                         </p>
                         <p class="radio-group-p">
-                            <input type="radio" name="typeOfRemainder" value="call" id="radioCall">
-                            <label for="radioCall">Llamada</label>
+                            <input type="radio" name="typeOfSearch" 
+                                value="call" id="radioDirector">
+                            <label for="radioDirector">Director</label>
                         </p>
                         <p class="radio-group-p">
-                        <input type="radio" name="typeOfRemainder" value="sms" id="radioSms">
-                        <label for="radioSms">Mensaje de texto (SMS)</label>
+                        <input type="radio" name="typeOfSearch" 
+                            value="sms" id="radioActor">
+                        <label for="radioActor">Actor / Actriz</label>
                         </p>
                     </div>
-                    <p><i>Se te enviarán las instrucciones según la opción que hayas seleccionado</i></p>
-                    <div class="remainder-email">
+                    <p></p>
+                    <div class="text-group">
                         <p class="entry-group-p">
-                            <label for="email">email</label>
-                            <input type="email" placeholder="e-mail registrado" name="email" id="email">
+                            <label for="searchText">Texto a buscar ...</label>
+                            <input type="text" placeholder="Texto a buscar" name="searchText" id="email">
                         </p>
-                        <div class="remainder-button-ok">
-                            <input type="button" value="Recuperar contraseña">
+                        <div class="button-ok">
+                            <input type="button" value="Buscar">
                         </div>
                     </div>
                     
                 </fieldset>
-                <div class="remainder-button-back">
+                <div class="button-back">
                     <a href="javascript:history.go(-1)">Volver atrás</a>
                 </div>
             </form>

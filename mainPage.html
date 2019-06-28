@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Práctica HTML5 y CSS - Santiago San Román</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/mainPage-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/mainPage.css">
     <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"> -->
 </head>
 
@@ -22,17 +22,16 @@
                     <li><a href="#">Novedades</a></li>
                     <li><a href="#">Series</a></li>
                     <li><a href="#">Favoritos</a></li>
-                    <li><a href="#">Búsqueda</a></li>
+                    <li><a href="./searchWin.html">Búsqueda</a></li>
                 </ul>
             </div>
             <div class="index-login-button">
-                <input type="button" value="Cerrar Sesión"
-                    onclick="location.href='./index.html'">
+                <input type="button" value="Cerrar Sesión" onclick="location.href='./index.html'">
             </div>
         </nav>
     </header>
     <main class="main">
-            
+
         <section class="index-title">
             <h1>Los mejores videos seleccionados para ti!!</h1>
         </section>
@@ -40,10 +39,10 @@
         <section class="carousel">
             <section class="carousel-items">
                 <!-- Cada uno de los videos mostrados -->
-                <div class="item">
+                <div class="item slide-in" id="item1">
                     <div class="cover-item">
                         <div class="description-item">
-                            <h2 id="video1-title"></h2>  
+                            <h2 id="video1-title"></h2>
                             <p id="video1-description"></p>
                             <p id="video1-calification"></p>
                         </div>
@@ -55,40 +54,41 @@
                         <p id="video1-footer"></p>
                     </div>
                 </div>
-
-                <div class="item">
+                <div class="item slide-in" id="item2">
                     <div class="cover-item">
                         <div class="description-item">
-                            <h2 id="video2-title"></h2>  
+                            <h2 id="video2-title"></h2>
                             <p id="video2-description"></p>
                             <p id="video2-calification"></p>
                         </div>
                         <a href="#modal-video2">
-                            <img class="desvanecer" 
-                                src="img/waves02.png">
+                            <img class="desvanecer" src="img/waves02.png">
                         </a>
                     </div>
                     <div class="footer-item">
                         <p id="video2-footer"></p>
                     </div>
                 </div>
-
-                <div class="item">
+                <div class="item slide-in" id="item3">
                     <div class="cover-item">
                         <div class="description-item">
-                            <h2 id="video3-title"></h2>  
+                            <h2 id="video3-title"></h2>
                             <p id="video3-description"></p>
                             <p id="video3-calification"></p>
                         </div>
                         <a href="#modal-video3">
-                            <img class="desvanecer"
-                                 src="img/pet01.png">
+                            <img class="desvanecer" src="img/pet01.png">
                         </a>
                     </div>
                     <div class="footer-item">
                         <p id="video3-footer"></p>
                     </div>
-                </div> 
+                </div>
+                <div class="controls">
+                    <a href="#item1" class="btn"> </a>
+                    <a href="#item2" class="btn"> </a>
+                    <a href="#item3" class="btn"> </a>
+                </div>
             </section>
 
             <!-- Divisiones modales por cada video -->
@@ -99,8 +99,7 @@
                     <p id="video1-description"></p>
                     <p id="video1-calification"></p>
                     <div>
-                        <video src="img/waves01.mp4" 
-                            width="auto" height="300px" controls autoplay loop>
+                        <video src="img/waves01.mp4" width="auto" height="300px" controls autoplay loop>
                     </div>
                 </div>
             </div>
@@ -112,8 +111,7 @@
                     <p id="video2-description"></p>
                     <p id="video2-calification"></p>
                     <div>
-                        <video src="img/waves02.mp4" frameborder="0"
-                            width="auto" height="300px" controls autoplay loop>
+                        <video src="img/waves02.mp4" frameborder="0" width="auto" height="300px" controls autoplay loop>
                     </div>
                 </div>
             </div>
@@ -125,8 +123,7 @@
                     <p id="video3-description"></p>
                     <p id="video3-calification"></p>
                     <div>
-                        <video src="img/pet01.mp4" frameborder="0"
-                            width="auto" height="300px" controls autoplay loop>
+                        <video src="img/pet01.mp4" frameborder="0" width="auto" height="300px" controls autoplay loop>
                     </div>
                 </div>
             </div>
@@ -138,7 +135,7 @@
             <div class="footer-phone">
                 <p>¿Preguntas? Llama al <a href="tel:+1626261122">999866616</a></p>
             </div>
-        </div>      
+        </div>
         <div class="footer-conditions">
             <div class="footer-links">
                 <ul>
