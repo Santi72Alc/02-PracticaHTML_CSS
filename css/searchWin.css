@@ -32,6 +32,7 @@ searchWin Page
 
 .fields {
     display: flex;
+    flex-direction: column;
     border: 0;
     padding: 15px;
 }
