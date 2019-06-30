@@ -274,10 +274,6 @@ input[type="button"]:hover {
         display: flex;
         flex-direction: column;
     }
-    /* .nav-class ul {
-        margin-top: 15px;
-        margin-left: 10px;
-    } */
 
     .index-login-button input[type="button"] {
         font-size: .7rem;

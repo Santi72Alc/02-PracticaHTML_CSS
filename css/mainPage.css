@@ -49,7 +49,6 @@ mainPage page
 
 
 
-
 /* Ponemos los parámetros en la ventana modal */
 [id$="-title"] {
     margin-bottom: 10px;
@@ -72,12 +71,21 @@ p[id$="-calification"] {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 100vh;
+    width: 100vw;
 }
 
+video {
+    width: 100%;
+    height: auto;
+}
 
-/* Declaraciones anteriores */
-/**************************************************/
-/* Hasta aquí */
+/* Modificamos a porque es la que nos
+da elo acceso al video */
+
+.cover-item a {
+    height: 100%;
+ }
 
 
 
@@ -85,9 +93,10 @@ p[id$="-calification"] {
 /* Título principal CENTRADO EN PANTALLA a gusto */
 .index-title {
     text-align: center;
-    width: 100%;
+    width: 90%;
     height: 40%;
-    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
     margin-bottom: 10px;
 }
 
@@ -99,13 +108,11 @@ p[id$="-calification"] {
 }
 
 
-
 /****************************************************/
 /* Código modificado del footer principal */
 .footer-links {
     margin-top: 10px;
 }
-
 
 .footer-links > ul { 
     display: flex;
@@ -149,7 +156,8 @@ Nos permite crear la ventana MODAL
 
 /* Creamos la ventana */
 .modalbox {
-    width: 250px;
+    /* width: 250px; */
+    width: 40%;
     position: relative;
     top: 10%;
     padding: 5px 20px 13px 20px;
@@ -161,19 +169,15 @@ Nos permite crear la ventana MODAL
      
 }
 
-
-/* Hacemos los movimientos */
 .movedown {
     margin: 0 auto;
 }
-
 
 .rotate {
     margin: 10% auto;
     -webkit-transform: scale(-5,-5);
     transform: scale(-5,-5);
 }
-
 
 .resize {
     margin: 10% auto;
@@ -182,11 +186,9 @@ Nos permite crear la ventana MODAL
  
 }
 
-
 .modalmask:target .movedown{       
     margin:10% auto;
 }
-
 
 .modalmask:target .rotate{     
     transform: rotate(360deg) scale(1,1);
@@ -218,26 +220,35 @@ Nos permite crear la ventana MODAL
     background: #FAAC58;
     color:#222;
 }
+/* fin de la ventana modal para ver los videos */
+/* *********************************** */
 
 
+
+/* ********************************** */
 /* A partir de aquí es el NUEVO carousel  */
 .carousel {
     position: relative;
     box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.64);
     margin-bottom: 10px;
-    height: 70vh;
-    width: 70vw;
+    height: 60vh;
+    width: 50vw;
     align-self: center;
     align-content: center;
+    background-color: white;
+    z-index: 1;
 }
 
+
+/* Contenedor de la foto, descripción 
+y elementos de acción */
 .carousel-inner {
     position: relative;
     overflow: hidden;
     width: 90%;
-    height: 70%;
+    height: 90%;
     margin: auto;
-    margin-top: 10%;
+    margin-top: 3%;
 }
 
 .carousel-open:checked + .carousel-item {
@@ -246,6 +257,9 @@ Nos permite crear la ventana MODAL
 }
 
 .carousel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
     height: 100%;
     opacity: 0;
@@ -259,46 +273,74 @@ Nos permite crear la ventana MODAL
     max-width: 100%;
 }
 
+
+
+
 /* Donde se pone la foto */
 .cover-item {
     display: flex;
     position: relative;
-    margin: auto;
-    width: 80%;
-    height: 100%;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    width: 70%;
+    height: auto;
     z-index: 1;
 }
 
 .cover-item img {
     width: 100%;
-    border-radius: 0;
-    height: 90%;
+    border-radius: 8px;
+    height: 100%;
+}
+
+/* pie de foto de cada item */
+.footer-item {
+    height: 30px;
+    padding: 5px;
+    padding-left: 10px;
+    color: var(--fg-footer-color);
+    /* background: var(--bg--footer-color); */
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px  black solid;
+    margin-top: 10px;
+}
+
+.footer-item p {
+    font-style: italic;
+    line-height: 30px;
+    font-size: 1.3rem;
+}
+
+.desvanecer:hover {
+    opacity: 0.2;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    transition: opacity 500ms;
 }
 
 
-
-video {
-    width: 100%;
-    height: auto;
-}
-
+/* Información que se presenta detrás de la imagen */
 .description-item {
     display: flex;
     flex-direction: column;
     position: absolute;
-    align-items: center;
     background-color: antiquewhite;
     color: black;
-    width: 85%;
-    height: 65%;
+    width: 80%;
+    height: auto;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    margin-top: 10px;
     z-index: -1;
-    margin: auto;
-    border: 0 red solid;
 }
 
 .description-item h2 {
@@ -309,13 +351,15 @@ video {
 
 .description-item p {
     font-style: italic;
-    font-size: .8rem;
+    font-size: 80%;
     padding: 5px;
 }
 
 .description-item:hover {
-    z-index: 15;
+    z-index: 1;
 }
+
+
 
 
 .carousel-control {
@@ -326,15 +370,15 @@ video {
     display: none;
     font-size: 40px;
     height: 40px;
+    width: 40px;
     line-height: 35px;
     position: absolute;
-    top: 50%;
-    -webkit-transform: translate(0, -50%);
+    top: 20%;
+    -webkit-transform: translate(0, -20%);
     cursor: pointer;
     -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
+    transform: translate(0, -20%);
     text-align: center;
-    width: 40px;
     z-index: 10;
 }
 
@@ -367,24 +411,17 @@ video {
     right: 0;
     text-align: center;
     z-index: 10;
-    color:white;
-    font-size: 3rem;
 }
 
 .carousel-indicators li {
     display: inline-block;
-    margin: 0 5px;
-}
-
-.carousel-bullet {
-    color: #fff;
     cursor: pointer;
-    display: block;
-    font-size: 35px;
+    margin: 0 5px;
+    font-size: 3rem;
 }
 
-.carousel-bullet:hover {
-    color: #black;
+.carousel-indicators li:hover {
+    color: blue;
 }
 
 #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
@@ -393,28 +430,8 @@ video {
     color: #428bca;
 }
 
-
-
-/*
-Pié de video
-*/
-.footer-item {
-    align-items: center;
-    height: 30px;
-    padding: 10px;
-    color: var(--fg-footer-color);
-}
-
-
-.desvanecer:hover {
-    opacity: 0.2;
-    -webkit-transition: opacity 500ms;
-    -moz-transition: opacity 500ms;
-    -o-transition: opacity 500ms;
-    -ms-transition: opacity 500ms;
-    transition: opacity 500ms;
-}
-
+/* fin de los controles del carousel */
+/* ********************************** */
 
 
 
@@ -425,11 +442,15 @@ Pié de video
 
 
 /************************************************/
-
-
+/* control 'responsivo' */
 
 @media screen and (max-width: 640px) { 
     
+
+    .main {
+        font-size: 10px;
+    }
+
     .footer-links li {
         font-size: .6rem;
         margin-bottom: 4px;
@@ -438,7 +459,58 @@ Pié de video
     .index-title h1 {
         font-size: 1.8rem;
     }
-    /*******************************/
-    /* Hacemos el carousel  */
-    
+
+    .carousel {
+        height: 40vh;
+        width: 90vw;
+        margin-top: 10%;
+    }
+
+    .carousel-inner  {
+        height: 40vh;
+    }
+
+    .description-item {
+        font-size: .45rem;
+    }
+
+    .footer-item p {
+        font-size:100%;
+        padding: 0;
+    }
+
+    .carousel-indicators {
+        visibility: hidden;
+    }
+
+}
+
+
+@media screen and (max-width: 640px) and (orientation: landscape) { 
+
+    .main {
+        display: inline-flex;
+        flex-direction: row-reverse;
+    }
+    .carousel {
+        width: 80vw;
+        height: 50vh;
+        margin-top: 0px;
+        margin-left: 5%;
+    }
+
+    .carousel-inner {
+        height: 50vh;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .description-item { font-size: .60rem; }
+
+    .footer-item p {
+        font-size:100%;
+        padding: 0;
+    }
 }
