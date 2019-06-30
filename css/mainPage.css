@@ -129,6 +129,55 @@ da elo acceso al video */
 
 
 
+
+/* Donde se pone la foto */
+.cover-item {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    width: 70%;
+    height: auto;
+    z-index: 1;
+}
+
+.cover-item img {
+    width: 100%;
+    border-radius: 8px;
+    height: 100%;
+}
+
+/* pie de foto de cada item */
+.footer-item {
+    height: 30px;
+    padding: 5px;
+    padding-left: 10px;
+    color: var(--fg-footer-color);
+    /* background: var(--bg--footer-color); */
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px  black solid;
+    margin-top: 10px;
+}
+
+.footer-item p {
+    font-style: italic;
+    line-height: 30px;
+    font-size: 1.3rem;
+}
+
+.desvanecer:hover {
+    opacity: 0.2;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    transition: opacity 500ms;
+}
+
+
+
 /********************************************************/
 /*
 Nos permite crear la ventana MODAL 
@@ -236,7 +285,7 @@ Nos permite crear la ventana MODAL
     align-self: center;
     align-content: center;
     background-color: white;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 
@@ -276,53 +325,6 @@ y elementos de acción */
 
 
 
-/* Donde se pone la foto */
-.cover-item {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    top: 0;
-    width: 70%;
-    height: auto;
-    z-index: 1;
-}
-
-.cover-item img {
-    width: 100%;
-    border-radius: 8px;
-    height: 100%;
-}
-
-/* pie de foto de cada item */
-.footer-item {
-    height: 30px;
-    padding: 5px;
-    padding-left: 10px;
-    color: var(--fg-footer-color);
-    /* background: var(--bg--footer-color); */
-    background: rgba(0, 0, 0, 0.7);
-    border: 1px  black solid;
-    margin-top: 10px;
-}
-
-.footer-item p {
-    font-style: italic;
-    line-height: 30px;
-    font-size: 1.3rem;
-}
-
-.desvanecer:hover {
-    opacity: 0.2;
-    -webkit-transition: opacity 500ms;
-    -moz-transition: opacity 500ms;
-    -o-transition: opacity 500ms;
-    -ms-transition: opacity 500ms;
-    transition: opacity 500ms;
-}
-
-
 /* Información que se presenta detrás de la imagen */
 .description-item {
     display: flex;
@@ -358,7 +360,6 @@ y elementos de acción */
 .description-item:hover {
     z-index: 1;
 }
-
 
 
 
@@ -430,6 +431,7 @@ y elementos de acción */
     color: #428bca;
 }
 
+
 /* fin de los controles del carousel */
 /* ********************************** */
 
@@ -472,6 +474,10 @@ y elementos de acción */
 
     .description-item {
         font-size: .45rem;
+    }
+
+    [id$="-title"] {
+        margin-bottom: 5px;
     }
 
     .footer-item p {
