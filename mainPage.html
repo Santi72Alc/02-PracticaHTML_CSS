@@ -35,102 +35,145 @@
         <section class="index-title">
             <h1>Los mejores videos seleccionados para ti!!</h1>
         </section>
-
+        <!-- Aquí incluiriamos lo que se quitó y se puso en mainPage_OldPart.html -->
         <section class="carousel">
-            <section class="carousel-items">
-                <!-- Cada uno de los videos mostrados -->
-                <div class="item slide-in" id="item1">
+            <div class="carousel-inner">
+
+                <!-- Item-1 -->
+                <input type="radio" class="carousel-open"
+                    id="carousel-1" name="carousel-1"
+                    aria-hidden="true" hidden="" checked="checked">
+                <div class="carousel-item slide-in" id="item1">
                     <div class="cover-item">
                         <div class="description-item">
-                            <h2 id="video1-title"></h2>
-                            <p id="video1-description"></p>
-                            <p id="video1-calification"></p>
+                            <h2>Titulo 1</h2>
+                            <p>Descripción 1</p>
+                            <p>Calificación</p>
+                            <!-- <h2 id="video1-title">Tit 1</h2> -->
+                            <!-- <p id="video1-description"></p> -->
+                            <!-- <p id="video1-calification"></p> -->
                         </div>
                         <a href="#modal-video1">
                             <img class="desvanecer" src="img/waves01.png">
                         </a>
                     </div>
                     <div class="footer-item">
-                        <p id="video1-footer"></p>
+                        <p id="video1-footer">Pie de la foto 1</p>
                     </div>
+                <!-- Fin de carousel-item -->
                 </div>
-                <div class="item slide-in" id="item2">
-                    <div class="cover-item">
-                        <div class="description-item">
-                            <h2 id="video2-title"></h2>
-                            <p id="video2-description"></p>
-                            <p id="video2-calification"></p>
+
+                <!-- Item-2 -->
+                <input type="radio" class="carousel-open"
+                    id="carousel-2" name="carousel"
+                    aria-hidden="true" hidden="">
+                <div class="carousel-item">
+                    <div class="carousel-item slide-in" id="item2">
+                        <div class="cover-item">
+                            <div class="description-item">
+                                <h2>Titulo 2</h2>
+                                <p>Descripción 2</p>
+                                <p>Calificación</p>
+                                <!-- <h2 id="video1-title">Tit 1</h2> -->
+                                <!-- <p id="video1-description"></p> -->
+                                <!-- <p id="video1-calification"></p> -->
+                            </div>
+                            <a href="#modal-video2">
+                                <img class="desvanecer" src="img/waves02.png">
+                            </a>
                         </div>
-                        <a href="#modal-video2">
-                            <img class="desvanecer" src="img/waves02.png">
-                        </a>
-                    </div>
-                    <div class="footer-item">
-                        <p id="video2-footer"></p>
-                    </div>
-                </div>
-                <div class="item slide-in" id="item3">
-                    <div class="cover-item">
-                        <div class="description-item">
-                            <h2 id="video3-title"></h2>
-                            <p id="video3-description"></p>
-                            <p id="video3-calification"></p>
+                        <div class="footer-item">
+                            <p id="video1-footer">Pie de la foto 2</p>
                         </div>
-                        <a href="#modal-video3">
-                            <img class="desvanecer" src="img/pet01.png">
-                        </a>
-                    </div>
-                    <div class="footer-item">
-                        <p id="video3-footer"></p>
+                    <!-- Fin de carousel-item -->
                     </div>
                 </div>
-                <div class="controls">
-                    <a href="#item1" class="btn"> </a>
-                    <a href="#item2" class="btn"> </a>
-                    <a href="#item3" class="btn"> </a>
-                </div>
-            </section>
 
-            <!-- Divisiones modales por cada video -->
-            <div id="modal-video1" class="modal-mask">
-                <div class="modalbox movedown">
-                    <a href="#close" title="Cerrar" class="close">X</a>
-                    <h2 id="video1-title"></h2>
-                    <p id="video1-description"></p>
-                    <p id="video1-calification"></p>
-                    <div>
-                        <video src="img/waves01.mp4"
-                            controls autoplay loop>
+                <!-- Item-3 -->
+                <input type="radio" class="carousel-open"
+                    id="carousel-3" name="carousel"
+                    aria-hidden="true" hidden="">
+                <div class="carousel-item">
+                    <div class="carousel-item slide-in" id="item3">
+                        <div class="cover-item">
+                            <div class="description-item">
+                                <h2>Titulo 3</h2>
+                                <p>Descripción 3</p>
+                                <p>Calificación</p>
+                                <!-- <h2 id="video1-title">Tit 1</h2> -->
+                                <!-- <p id="video1-description"></p> -->
+                                <!-- <p id="video1-calification"></p> -->
+                            </div>
+                            <a href="#modal-video1">
+                                <img class="desvanecer" src="img/pet01.png">
+                            </a>
+                        </div>
+                        <div class="footer-item">
+                            <p id="video1-footer">Pie de la foto 3</p>
+                        </div>
+                    <!-- Fin de carousel-item -->
                     </div>
                 </div>
-            </div>
+                
+                <!-- Flechas para poder movernos por las imágenes -->
+                <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+                <label for="carousel-2" class="carousel-control next control-1">›</label>
+                <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+                <label for="carousel-3" class="carousel-control next control-2">›</label>
+                <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+                <label for="carousel-1" class="carousel-control next control-3">›</label>
 
-            <div id="modal-video2" class="modal-mask">
-                <div class="modalbox movedown">
-                    <a href="#close" title="Cerrar" class="close">X</a>
-                    <h2 id="video2-title"></h2>
-                    <p id="video2-description"></p>
-                    <p id="video2-calification"></p>
-                    <div>
-                        <video src="img/waves02.mp4"
-                            controls autoplay loop>
-                    </div>
-                </div>
-            </div>
+                <ol class="carousel-indicators">
+                    <li><label for="carousel-1" class="carousel-bullet"></label>•</li>
+                    <li><label for="carousel-2" class="carousel-bullet"></label>•</li>
+                    <li><label for="carousel-3" class="carousel-bullet"></label>•</li>
+                </ol>
 
-            <div id="modal-video3" class="modal-mask">
-                <div class="modalbox movedown">
-                    <a href="#close" title="Cerrar" class="close">X</a>
-                    <h2 id="video3-title"></h2>
-                    <p id="video3-description"></p>
-                    <p id="video3-calification"></p>
-                    <div>
-                        <video src="img/pet01.mp4" frameborder="0"
-                             controls autoplay loop>
-                    </div>
-                </div>
+            <!-- Fin de carousel-inner -->
             </div>
+            
+        <!-- Fin de carousel -->
         </section>
+
+        <!-- Divisiones modales por cada video -->
+        <div id="modal-video1" class="modal-mask">
+            <div class="modalbox movedown">
+                <a href="#close" title="Cerrar" class="close">X</a>
+                <h2 id="video1-title"></h2>
+                <p id="video1-description"></p>
+                <p id="video1-calification"></p>
+                <div>
+                    <video src="img/waves01.mp4" frameborder="0" controls autoplay loop>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-video2" class="modal-mask">
+            <div class="modalbox movedown">
+                <a href="#close" title="Cerrar" class="close">X</a>
+                <h2 id="video2-title"></h2>
+                <p id="video2-description"></p>
+                <p id="video2-calification"></p>
+                <div>
+                    <video src="img/waves02.mp4" frameborder="0" controls autoplay loop>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-video3" class="modal-mask">
+            <div class="modalbox movedown">
+                <a href="#close" title="Cerrar" class="close">X</a>
+                <h2 id="video3-title"></h2>
+                <p id="video3-description"></p>
+                <p id="video3-calification"></p>
+                <div>
+                    <video src="img/pet01.mp4" frameborder="0"
+                            controls autoplay loop>
+                </div>
+            </div>
+        </div>
+
+    <!-- Fin de main -->
     </main>
 
     <footer class="footer">
